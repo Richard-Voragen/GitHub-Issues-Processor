@@ -56,7 +56,7 @@ public class GitHubProc {
     return filterCommentsWithName(stream, word).collect(Collectors.groupingBy(
             GitHubProc::getProject, Collectors.groupingBy(
                     GitHubComment::author, Collectors.summingLong(
-                            num -> countWordOccurancesInSingleComment((GitHubComment) num, word)))));
+                            num -> countWordOccurancesInSingleComment(num, word)))));
   }
 
   public static Stream<GitHubComment> filterCommentsWithName(Stream<GitHubComment> comments, String word) {
