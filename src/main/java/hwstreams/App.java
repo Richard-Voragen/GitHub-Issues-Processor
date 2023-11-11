@@ -7,7 +7,7 @@ public class App {
     public static void main(String[] args) throws IOException {
         // You may change this method, we will only evaluate methods in GitHubProc
         // you will need to change the path on this next line.
-        var csvPath = Paths.get("/Users/devanbu/Downloads/hw32/hw3starter/data/github_issues.csv");
+        var csvPath = Paths.get("C:/Users/Richard Voragen/Desktop/GitHub-Issues-Processor/data/github_issues.csv");
         // Uncomment the following line to see what the stream looks like, and get
         // started.
         // Util.readComments(csvPath).limit(5).forEach(System.out::println);
